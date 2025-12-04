@@ -128,13 +128,3 @@ Pandas
 Matplotlib / Seaborn
 
 scikit-learn
-
-📎 Files in This Repository
-
-Notebook / script with full analysis
-
-Custom regression implementation
-
-Plots generated during the project
-
-README.md (this file)

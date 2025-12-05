@@ -1,8 +1,8 @@
 # ML-Homework-Ecommerce-data
 
-📘 Linear Regression on E-Commerce Customer Data
+Linear Regression on E-Commerce Customer Data
 
-A simple ML analysis using both custom and sklearn regression
+A simple ML analysis
 
 This project explores a real-world style e-commerce dataset and builds a one-dimensional linear regression model to predict Yearly Amount Spent by customers based on their Length of Membership.
 
@@ -22,10 +22,9 @@ compute regression metrics (MAE, MSE, RMSE, R²)
 
 plot the fitted line and save the output
 
-Everything is done in a clear, step-by-step approach.
 
-🔍 Project Steps
-1️⃣ Data Cleaning
+Project Steps
+Data Cleaning
 
 The dataset originally contained 8 columns, including non-numerical identifiers such as:
 
@@ -49,18 +48,18 @@ Length of Membership
 
 Yearly Amount Spent (target)
 
-2️⃣ Feature Selection
+Feature Selection
 
 Scatterplots were created to examine linear relationships with the target.
 The strongest linear relationship was found between:
 
-➡️ Length of Membership
+Length of Membership
 and
-➡️ Yearly Amount Spent
+Yearly Amount Spent
 
 So we kept only this one feature for the 1D linear regression task.
 
-3️⃣ Custom Linear Regression
+Custom Linear Regression
 
 I implemented my own function:
 
@@ -69,9 +68,9 @@ fit_1d_linear_regression(x, y)
 
 It calculates:
 
-β₁ (slope)
+betta 1 (slope)
 
-β₀ (intercept)
+betta 0 (intercept)
 
 using the analytical closed-form formulas based on means and covariances.
 
@@ -82,14 +81,14 @@ plot_fitted_line(b0, b1, x, y, username)
 
 creates a scatterplot + regression line and saves it as an image file.
 
-4️⃣ Sklearn Regression Comparison
+Sklearn Regression Comparison
 
 A standard LinearRegression model was fit using sklearn.
-Both models produced almost identical coefficients — the differences were only floating-point rounding.
+Both models produced almost identical coefficients the differences were only floating-point rounding.
 
 This confirms that the custom implementation is correct.
 
-5️⃣ Model Evaluation
+Model Evaluation
 
 Using sklearn.metrics, the following were computed:
 
@@ -99,25 +98,25 @@ MSE — Mean Squared Error
 
 RMSE — Root Mean Squared Error
 
-R² Score
+R^2 Score
 
 Both the custom model and sklearn model achieved the same results.
 
-The R² score shows that Length of Membership alone explains most of the variance in yearly spending, making it a strong predictor for this dataset.
+The R^2 score shows that Length of Membership alone explains most of the variance in yearly spending, making it a strong predictor for this dataset.
 
-📈 Results Summary
+Results Summary
 
 Strong positive linear correlation between membership length and yearly spending
 
 Custom regression matches sklearn’s implementation
 
-Errors are low and R² is high for a single-feature model
+Errors are low and R ^ 2 is high for a single-feature model
 
 Regression line fits the data well
 
 This demonstrates that even a simple one-feature model can provide solid predictions when the relationship is truly linear.
 
-🛠️ Technologies Used
+Technologies Used
 
 Python
 
